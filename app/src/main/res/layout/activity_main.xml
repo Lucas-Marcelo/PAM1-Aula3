@@ -8,11 +8,38 @@
 
     <Button
         android:id="@+id/btnProcessar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="364dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:onClick="onProcessar"
         android:text="@string/processar"
-        tools:layout_editor_absoluteX="119dp"
-        tools:layout_editor_absoluteY="219dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtNome"
+        app:layout_constraintTop_toBottomOf="@+id/txtNome"
         tools:text="@string/processar" />
+
+    <TextView
+        android:id="@+id/lblNome"
+        android:layout_width="73dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/nome"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblNome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblNome" />
 </android.support.constraint.ConstraintLayout>
